@@ -1,16 +1,16 @@
-/*   
- * Template Name: PrettyDocs - Responsive Website Template for documentations
+/*
+ * Name: PageUp API portal
  * Version: 1.0
- * Author: Xiaoying Riley
- * License: Creative Commons Attribution 3.0 License - https://creativecommons.org/licenses/by/3.0/
- * Twitter: @3rdwave_themes
- * Website: http://themes.3rdwavemedia.com/
+ * Author: Daniel Wang
 */
 /* Theme default */
 /* ======= Base ======= */
 body,
 html {
   height: 100%;
+}
+.doc-body {
+  font-size: 16px;
 }
 .page-wrapper {
   min-height: 100%;
@@ -25,23 +25,6 @@ html {
 .footer {
   height: 50px;
 }
-p {
-  line-height: 1.5;
-}
-a {
-  color: #206b8b;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-a:hover {
-  text-decoration: underline;
-  color: #1b5b77;
-}
-a:focus {
-  text-decoration: none;
-}
 code {
   background: #222;
   color: #fff;
@@ -51,218 +34,8 @@ code {
   padding: 4px 8px 2px;
   display: inline-block;
 }
-.btn,
-a.btn {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.5;
-}
-.btn .fa,
-a.btn .fa {
-  margin-right: 5px;
-}
-.btn-primary,
-a.btn-primary {
-  background: #257ba0;
-  border: 1px solid #257ba0;
-  color: #fff !important;
-}
-.btn-primary.active,
-a.btn-primary.active,
-.btn-primary.hover,
-a.btn-primary.hover,
-.btn-primary:active,
-a.btn-primary:active,
-.btn-primary:focus,
-a.btn-primary:focus,
-.btn-primary:hover,
-a.btn-primary:hover {
-  background: #206b8b;
-  color: #fff !important;
-  border: 1px solid #206b8b;
-}
-.btn-green,
-a.btn-green {
-  background: #339989;
-  border: 1px solid #339989;
-  color: #fff !important;
-}
-.btn-green.active,
-a.btn-green.active,
-.btn-green.hover,
-a.btn-green.hover,
-.btn-green:active,
-a.btn-green:active,
-.btn-green:focus,
-a.btn-green:focus,
-.btn-green:hover,
-a.btn-green:hover {
-  background: #2d8678;
-  color: #fff !important;
-  border: 1px solid #2d8678;
-}
-.body-green .btn-green,
-.body-green a.btn-green {
-  color: #fff !important;
-}
-.body-green .btn-green.active,
-.body-green a.btn-green.active,
-.body-green .btn-green.hover,
-.body-green a.btn-green.hover,
-.body-green .btn-green:active,
-.body-green a.btn-green:active,
-.body-green .btn-green:focus,
-.body-green a.btn-green:focus,
-.body-green .btn-green:hover,
-.body-green a.btn-green:hover {
-  color: #fff !important;
-}
-.btn-blue,
-a.btn-blue {
-  background: #57c0e9;
-  border: 1px solid #57c0e9;
-  color: #fff !important;
-}
-.btn-blue.active,
-a.btn-blue.active,
-.btn-blue.hover,
-a.btn-blue.hover,
-.btn-blue:active,
-a.btn-blue:active,
-.btn-blue:focus,
-a.btn-blue:focus,
-.btn-blue:hover,
-a.btn-blue:hover {
-  background: #40b8e6;
-  color: #fff !important;
-  border: 1px solid #40b8e6;
-}
-.btn-orange,
-a.btn-orange {
-  background: #f78764;
-  border: 1px solid #f78764;
-  color: #fff !important;
-}
-.btn-orange.active,
-a.btn-orange.active,
-.btn-orange.hover,
-a.btn-orange.hover,
-.btn-orange:active,
-a.btn-orange:active,
-.btn-orange:focus,
-a.btn-orange:focus,
-.btn-orange:hover,
-a.btn-orange:hover {
-  background: #f6744c;
-  color: #fff !important;
-  border: 1px solid #f6744c;
-}
-.btn-red,
-a.btn-red {
-  background: #ee3d4b;
-  border: 1px solid #ee3d4b;
-  color: #fff !important;
-}
-.btn-red.active,
-a.btn-red.active,
-.btn-red.hover,
-a.btn-red.hover,
-.btn-red:active,
-a.btn-red:active,
-.btn-red:focus,
-a.btn-red:focus,
-.btn-red:hover,
-a.btn-red:hover {
-  background: #ec2635;
-  color: #fff !important;
-  border: 1px solid #ec2635;
-}
-.btn-pink,
-a.btn-pink {
-  background: #e1a931;
-  border: 1px solid #e1a931;
-  color: #fff !important;
-}
-.btn-pink.active,
-a.btn-pink.active,
-.btn-pink.hover,
-a.btn-pink.hover,
-.btn-pink:active,
-a.btn-pink:active,
-.btn-pink:focus,
-a.btn-pink:focus,
-.btn-pink:hover,
-a.btn-pink:hover {
-  background: #d99e20;
-  color: #fff !important;
-  border: 1px solid #d99e20;
-}
-.btn-purple,
-a.btn-purple {
-  background: #7e52a0;
-  border: 1px solid #7e52a0;
-  color: #fff !important;
-}
-.btn-purple.active,
-a.btn-purple.active,
-.btn-purple.hover,
-a.btn-purple.hover,
-.btn-purple:active,
-a.btn-purple:active,
-.btn-purple:focus,
-a.btn-purple:focus,
-.btn-purple:hover,
-a.btn-purple:hover {
-  background: #71498f;
-  color: #fff !important;
-  border: 1px solid #71498f;
-}
 .btn-cta {
   padding: 7px 15px;
-}
-.form-control {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  height: 40px;
-  border-color: #f0f0f0;
-}
-.form-control::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #bebec1;
-}
-.form-control:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #bebec1;
-}
-.form-control::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #bebec1;
-}
-.form-control:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #bebec1;
-}
-.form-control:focus {
-  border-color: #e3e3e3;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-input[type="button"],
-input[type="email"],
-input[type="password"],
-input[type="submit"],
-input[type="text"],
-select,
-textarea {
-  appearance: none;
-  /* for mobile safari */
-  -webkit-appearance: none;
 }
 #topcontrol {
   background: #257ba0;
@@ -301,7 +74,6 @@ textarea {
 .header {
   background: #58585b;
   color: rgba(255, 255, 255, 0.85);
-  border-top: 5px solid #257ba0;
   padding: 30px 0;
 }
 .header a {
@@ -334,7 +106,7 @@ textarea {
 .body-red .branding .text-highlight {
   color: #ee3d4b;
 }
-.body-pink .branding .text-highlight {
+.body-yellow .branding .text-highlight {
   color: #e1a931;
 }
 .body-purple .branding .text-highlight {
@@ -360,7 +132,7 @@ textarea {
 .body-red .branding .icon {
   color: #ee3d4b;
 }
-.body-pink .branding .icon {
+.body-yellow .branding .icon {
   color: #e1a931;
 }
 .body-purple .branding .icon {
@@ -1069,9 +841,12 @@ textarea {
 /* Large devices (large desktops, 1200px and up) */
 /* ======= Landing Page ======= */
 .landing-page .header {
-  background: #58585b;
+  background-image: linear-gradient(rgba(20, 44, 82, 0.85), rgba(20, 44, 82, 0.85)), url('../images/bg.jpg');
   color: rgba(255, 255, 255, 0.85);
-  padding: 60px 0;
+  padding: 160px 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
 .landing-page .header a {
   color: #fff;
@@ -1094,8 +869,9 @@ textarea {
   color: #257ba0;
 }
 .landing-page .tagline {
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 30px 0;
 }
 .landing-page .tagline p {
   margin-bottom: 5px;
