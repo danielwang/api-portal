@@ -72,7 +72,7 @@ code {
 }
 /* ====== Header ====== */
 .header {
-  background: #58585b;
+  background: linear-gradient(120deg, #257ba0 25%, #7e52a0 85%);
   color: rgba(255, 255, 255, 0.85);
   padding: 30px 0;
 }
@@ -160,7 +160,7 @@ code {
 }
 /* ====== Footer ====== */
 .footer {
-  background: #323234;
+  background: #142c52;
   color: rgba(255, 255, 255, 0.6);
   padding: 15px 0;
 }
@@ -168,7 +168,7 @@ code {
   color: #257ba0;
 }
 .footer .fa-heart {
-  color: #e1a931;
+  color: #ee3d4b;
 }
 /* ======= Doc Styling ======= */
 .doc-wrapper {
@@ -263,28 +263,7 @@ code {
   margin-top: 5px;
 }
 .question {
-  font-weight: 400 !important;
-  color: #206b8b;
-}
-.question .body-green {
-  color: #2d8678;
-}
-.body-blue .question {
-  color: #40b8e6;
-}
-.body-orange .question {
-  color: #f6744c;
-}
-.body-yellow .question {
-  color: #d99e20;
-}
-.body-purple .question {
-  color: #71498f;
-}
-.question .fa {
-  -webkit-opacity: 0.6;
-  -moz-opacity: 0.6;
-  opacity: 0.6;
+  color: #257ba0;
 }
 .question .label {
   font-size: 11px;
@@ -565,34 +544,34 @@ code {
   border-left: 4px solid transparent;
   color: #717175;
 }
-.doc-menu > li > a:hover,
-.doc-menu > li > a:focus {
+.doc-menu > li > a:focus,
+.doc-menu > li > a:hover {
   color: #257ba0;
   text-decoration: none;
   background: none;
 }
-.body-green .doc-menu > li > a:hover,
-.body-green .doc-menu > li > a:focus {
+.body-green .doc-menu > li > a:focus,
+.body-green .doc-menu > li > a:hover {
   color: #339989;
 }
-.body-blue .doc-menu > li > a:hover,
-.body-blue .doc-menu > li > a:focus {
+.body-blue .doc-menu > li > a:focus,
+.body-blue .doc-menu > li > a:hover {
   color: #57c0e9;
 }
-.body-orange .doc-menu > li > a:hover,
-.body-orange .doc-menu > li > a:focus {
+.body-orange .doc-menu > li > a:focus,
+.body-orange .doc-menu > li > a:hover {
   color: #f78764;
 }
-.body-red .doc-menu > li > a:hover,
-.body-red .doc-menu > li > a:focus {
+.body-red .doc-menu > li > a:focus,
+.body-red .doc-menu > li > a:hover {
   color: #ee3d4b;
 }
-.body-yellow .doc-menu > li > a:hover,
-.body-yellow .doc-menu > li > a:focus {
+.body-yellow .doc-menu > li > a:focus,
+.body-yellow .doc-menu > li > a:hover {
   color: #e1a931;
 }
-.body-purple .doc-menu > li > a:hover,
-.body-purple .doc-menu > li > a:focus {
+.body-purple .doc-menu > li > a:focus,
+.body-purple .doc-menu > li > a:hover {
   color: #7e52a0;
 }
 .doc-menu > li.active > a {
@@ -631,7 +610,7 @@ code {
 }
 .doc-sub-menu > li {
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .doc-sub-menu > li:first-child {
   padding-top: 5px;
@@ -639,8 +618,7 @@ code {
 .doc-sub-menu > li > a {
   display: block;
   color: #717175;
-  padding: 0;
-  padding-left: 34px;
+  padding: 0 0 0 34px;
   background: none;
 }
 .doc-sub-menu > li > a:hover {
@@ -839,14 +817,33 @@ code {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+/* ======= Login ===========  */
+.container {
+  position: relative;
+}
+.login-area {
+  position: absolute;
+  top: -130px;
+  right: 0;
+}
+.login-area .btn-outline {
+  background-color: transparent;
+}
+.login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+}
 /* ======= Landing Page ======= */
 .landing-page .header {
   background-image: linear-gradient(rgba(20, 44, 82, 0.85), rgba(20, 44, 82, 0.85)), url('../images/bg.jpg');
   color: rgba(255, 255, 255, 0.85);
   padding: 160px 0;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: 0 -100px;
 }
 .landing-page .header a {
   color: #fff;
@@ -871,7 +868,7 @@ code {
 .landing-page .tagline {
   font-weight: 700;
   font-size: 18px;
-  margin: 30px 0;
+  margin: 45px 0;
 }
 .landing-page .tagline p {
   margin-bottom: 5px;
@@ -879,23 +876,8 @@ code {
 .landing-page .tagline .text-highlight {
   color: #123b4d;
 }
-.landing-page .fa-heart {
-  color: #e1a931;
-}
 .landing-page .cta-container {
   margin-top: 30px;
-}
-.landing-page .social-container {
-  margin-top: 30px;
-}
-.landing-page .social-container .twitter-tweet {
-  display: inline-block;
-  margin-right: 5px;
-  position: relative;
-  top: 5px;
-}
-.landing-page .social-container .fab-like {
-  display: inline-block;
 }
 .cards-section {
   padding: 60px 0;
