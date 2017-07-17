@@ -72,12 +72,17 @@ code {
 }
 /* ====== Header ====== */
 .header {
-  background: linear-gradient(120deg, #257ba0 25%, #7e52a0 85%);
+  background-image: url('../images/pattern.svg');
   color: rgba(255, 255, 255, 0.85);
   padding: 30px 0;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.header .navbar-brand {
+  height: auto;
 }
 .header a {
-  color: #fff;
+  color: #fff !important;
 }
 .branding {
   text-transform: uppercase;
@@ -173,7 +178,6 @@ code {
 /* ======= Doc Styling ======= */
 .doc-wrapper {
   padding: 45px 0;
-  background: #f9f9fb;
 }
 .doc-body {
   position: relative;
@@ -841,9 +845,9 @@ code {
   background-image: linear-gradient(rgba(20, 44, 82, 0.85), rgba(20, 44, 82, 0.85)), url('../images/bg.jpg');
   color: rgba(255, 255, 255, 0.85);
   padding: 160px 0;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
-  background-position: 0 -100px;
+  background-position: 0 -350px;
 }
 .landing-page .header a {
   color: #fff;
