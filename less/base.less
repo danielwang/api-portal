@@ -1,4 +1,5 @@
 /* ======= Base ======= */
+
 body,
 html {
   height: 100%;
@@ -65,19 +66,29 @@ code {
   max-width: 100%;
 }
 /* ====== Header ====== */
+
 .header {
   background-image: url('../images/pattern.svg');
   color: rgba(256, 256, 256, 0.85);
-  padding: 30px 0;
+  padding: 15px 0;
   background-position: center bottom;
   background-repeat: no-repeat;
 
   .navbar-brand {
     height: auto;
+
+    > img {
+      width: 120px;
+      margin-top: 10px;
+    }
   }
 
   a {
     color: #fff !important;
+
+    &.navbar-brand {
+      padding: 0;
+    }
   }
 }
 
@@ -97,30 +108,6 @@ code {
 
   .text-highlight {
     color: @color-primary;
-
-    .body-green & {
-      color: @color-green;
-    }
-
-    .body-blue & {
-      color: @color-blue;
-    }
-
-    .body-orange & {
-      color: @color-orange;
-    }
-
-    .body-red & {
-      color: @color-red;
-    }
-
-    .body-yellow & {
-      color: @color-yellow;
-    }
-
-    .body-purple & {
-      color: @color-purple;
-    }
   }
 
   .text-bold {
@@ -136,10 +123,6 @@ code {
       color: @color-green;
     }
 
-    .body-blue & {
-      color: @color-blue;
-    }
-
     .body-orange & {
       color: @color-orange;
     }
@@ -157,33 +140,8 @@ code {
     }
   }
 }
-
-.breadcrumb {
-  background: none;
-  margin-bottom: 0;
-  padding: 0;
-
-  li {
-    color: rgba(256, 256, 256, 0.5);
-
-    &.active {
-      color: rgba(256, 256, 256, 0.5);
-    }
-
-    a {
-      color: rgba(256, 256, 256, 0.5);
-
-      &:hover {
-        color: #fff;
-      }
-    }
-  }
-}
-
-.breadcrumb > li+li:before {
-  color: rgba(0, 0, 0, 0.4);
-}
 /* ====== Footer ====== */
+
 .footer {
   background: @pu-navy;
   color: rgba(256, 256, 256, 0.6);

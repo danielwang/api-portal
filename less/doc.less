@@ -1,7 +1,6 @@
 /* ======= Doc Styling ======= */
-
 .doc-wrapper {
-  padding: 45px 0;
+  padding: 30px 0 45px;
 }
 
 .doc-body {
@@ -9,36 +8,12 @@
 }
 
 .doc-header {
-  margin-bottom: 30px;
+  margin: 30px 0;
 
   .doc-title {
     color: @color-primary;
     margin-top: 0;
     font-size: 36px;
-
-    .body-green & {
-      color: @color-green;
-    }
-
-    .body-blue & {
-      color: @color-blue;
-    }
-
-    .body-orange & {
-      color: @color-orange;
-    }
-
-    .body-red & {
-      color: @color-red;
-    }
-
-    .body-yellow & {
-      color: @color-yellow;
-    }
-
-    .body-purple & {
-      color: @color-purple;
-    }
   }
 
   .icon {
@@ -358,7 +333,6 @@
   }
 }
 /* Color Schemes */
-
 .body-green {
   .header {
     border-color: @color-green;
@@ -372,78 +346,7 @@
     }
   }
 }
-
-.body-blue {
-  .header {
-    border-color: @color-blue;
-  }
-
-  a {
-    color: @color-blue;
-
-    &:hover {
-      color: darken(@color-blue, 10%);
-    }
-  }
-}
-
-.body-orange {
-  .header {
-    border-color: @color-orange;
-  }
-
-  a {
-    color: @color-orange;
-
-    &:hover {
-      color: darken(@color-orange, 10%);
-    }
-  }
-}
-
-.body-yellow {
-  .header {
-    border-color: @color-yellow;
-  }
-
-  a {
-    color: @color-yellow;
-
-    &:hover {
-      color: darken(@color-yellow, 10%);
-    }
-  }
-}
-
-.body-purple {
-  .header {
-    border-color: @color-purple;
-  }
-
-  a {
-    color: @color-purple;
-
-    &:hover {
-      color: darken(@color-purple, 10%);
-    }
-  }
-}
-
-.body-red {
-  .header {
-    border-color: @color-red;
-  }
-
-  a {
-    color: @color-red;
-
-    &:hover {
-      color: darken(@color-red, 10%);
-    }
-  }
-}
 /* Sidebar */
-
 .doc-sidebar {
   width: 200px;
 }
@@ -638,7 +541,6 @@
   position: absolute;
 }
 /* ===== Promo block ===== */
-
 .promo-block {
   background: darken(@color-primary, 5%);
 
